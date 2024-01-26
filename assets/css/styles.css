@@ -23,12 +23,12 @@ header {
     align-items: center;
 }
 
-.introduction .righ-side {
+.introduction .right-side {
     display: flex;
     /* flex-direction: row;
      */
      justify-content: center;
-     margin-top: 30px auto;
+     margin: 30px auto;
 }
 
 @media(max-width:576px) {
@@ -38,7 +38,7 @@ header {
 }
 
 @media(min-width:576px) {
-    .introduction .righ-side img {
+    .introduction .right-side img {
         width: 500px;
     }
 }
@@ -46,7 +46,6 @@ header {
 .introduction .left-side h1 {
 font-size: 72px;
 font-weight: 700;
-line-height: 82.5px; /* 114.583% */
 letter-spacing: 2px;
 }
 
@@ -54,7 +53,7 @@ letter-spacing: 2px;
     color: #FF8A56;
 }
 
-.introduction .righ-side img {
+.introduction .right-side img {
     width: 500px;
 }
 
@@ -66,18 +65,12 @@ letter-spacing: 2px;
     font-size: 34px;
 }
 
-@media(min-width:992px) {
-    .container {
-        max-width: 1200px;
-        margin: 40px auto;
-    }
 
-    .introduction {
-        display: flex;
-    }
-
-    
-    
+.introduction .left-side .book-a-call button {
+    padding: 15px 30px 15px 30px;
+    background: #000;
+    color: #fff;
+    align-items: center;
 }
 
 @media(min-width:576px) and (max-width:767px) {
@@ -88,16 +81,21 @@ letter-spacing: 2px;
     
 }
 
-@media(min-width:768px) {
-    .container {
-        max-width: 720px;
-        margin: 0px auto;
+
+@media (min-width:428px) {
+    .introduction .left-side h1 {
+        font-size: 40px;
     }
 }
 
 
-
 @media(min-width:768px) {
+
+
+    .container {
+        max-width: 720px;
+        margin: 0px auto;
+    }
     
     nav {
         display: block;
@@ -107,5 +105,48 @@ letter-spacing: 2px;
     .fa-bars {
         display: none;
     }
+    .introduction .left-side h1 {
+        font-size: 73px;
+        text-align: center;
+    }   
+
+    .introduction .left-side p {
+        text-align: center;
+    }
+
+    .introduction .right-side img {
+        width: 500px;
+    }
+
+    .book-a-call {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media(min-width:992px) {
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .introduction {
+        display: flex;
+    }
+
+    .introduction .left-side h1, .introduction .left-side p {
+        text-align: left;
+    }
+
+
+    .introduction .book-a-call {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    
     
 }
