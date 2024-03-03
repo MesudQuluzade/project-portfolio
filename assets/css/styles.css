@@ -11,6 +11,7 @@ body {
 
 header nav a {
     color: #000;
+    margin-left: 10px;
 }
 
 nav {
@@ -31,6 +32,125 @@ header {
      margin: 30px auto;
 }
 
+
+.introduction .left-side h1 {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    }
+    
+    .introduction .left-side h1 span {
+        color: #FF8A56;
+    }
+    
+    .introduction .right-side img {
+        width: 500px;
+    }
+    
+    .introduction .right-side img {
+        width: 300px;
+    }
+    
+    .introduction .left-side h1 {
+        font-size: 34px;
+    }
+    
+    
+    .introduction .left-side .book-a-call button {
+        padding: 15px 30px 15px 30px;
+        background: #000;
+        color: #fff;
+        align-items: center;
+    }
+
+.introduction .left-side .cv {
+    margin-left: 15px;
+}
+
+.introduction .left-side .cv .Right-arrow {
+    margin-left: 10px;
+}
+
+.services ul {
+    list-style-type: square;
+}
+
+/* .services .cards {
+    display: flex;
+} */
+
+.services .cards {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(306px, 1fr));
+    gap: 90px;
+}
+
+.services .cards .card {
+    padding: 50px 10px;
+    transition: box-shadow 1.4s ease;
+}
+
+.services h6 {
+    color: #FF5E69;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.services h1 {
+    color: #000;
+    text-align: center;
+    font-size: 31px;
+}
+
+.blogs {
+    background: #000;
+    display: flex;
+}
+
+.blogs .block-left-side h6 {
+    color: #FFA84B;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+.block-left-side h1 {
+    color: #fff;
+    font-size: 51px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.block-left-side {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.blogs .block-right-side p {
+    color: rgba(255, 255, 255, 0.70);
+
+
+}
+
+
+.blogs .block-right-side h1 {
+    color:#fff
+
+
+}
+
+.services .cards .card:hover {
+    box-shadow: 8px 6px 21px 0px rgba(249,248,113,0.75);
+-webkit-box-shadow: 8px 6px 21px 0px rgba(249,248,113,0.75);
+-moz-box-shadow: 8px 6px 21px 0px rgba(249,248,113,0.75);
+}
+
 @media(max-width:576px) {
     .container {
         max-width: 100%;
@@ -43,35 +163,7 @@ header {
     }
 }
 
-.introduction .left-side h1 {
-font-size: 72px;
-font-weight: 700;
-letter-spacing: 2px;
-}
 
-.introduction .left-side h1 span {
-    color: #FF8A56;
-}
-
-.introduction .right-side img {
-    width: 500px;
-}
-
-.introduction .right-side img {
-    width: 300px;
-}
-
-.introduction .left-side h1 {
-    font-size: 34px;
-}
-
-
-.introduction .left-side .book-a-call button {
-    padding: 15px 30px 15px 30px;
-    background: #000;
-    color: #fff;
-    align-items: center;
-}
 
 @media(min-width:576px) and (max-width:767px) {
     .container {
@@ -123,6 +215,9 @@ letter-spacing: 2px;
         justify-content: center;
         align-items: center;
     }
+    .services h1 {
+        font-size: 52px;
+    }
 }
 
 
@@ -145,6 +240,9 @@ letter-spacing: 2px;
     .introduction .book-a-call {
         display: flex;
         justify-content: flex-start;
+    }
+    .services h1 {
+        font-size: 81px;
     }
 
     
